@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesse Grocock: Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script></head>
+<body>
+
+  <div class="container-fluid bg-black text-white py-3 p-0" id="header-section">
+    <div class="row align-items-center">
+      
+      <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+        <img id="profile-picture" src="/images/profile_picture_bw.JPG" alt="Profile Picture" style="max-width: 16rem;">
+      </div>
+  
+      <div class="col-12 col-md-8">
+        <h1>Jesse Grocock</h1>
+        <h3>Graduate Full Stack Software Engineer</h3>
+        <h3>Java, Kotlin, C#, HTML, CSS, JS, MySQL, PostGreSQL</h3>
+      </div>
+  
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light glow-border-top p-0">
+    <div class="container justify-content-center">
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav w-100 d-flex justify-content-between text-center">
+          <li class="nav-item dropdown flex-fill">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Projects
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown1">
+              <li><a class="dropdown-item" href="#">Recipe Tracking App</a></li>
+              <li><a class="dropdown-item" href="#">Music Store Front</a></li>
+            </ul>
+          </li>
+        
+          <li class="nav-item dropdown flex-fill">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Games
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown2">
+              <li><a class="dropdown-item" href="#">Featured Game</a></li>
+              <li><a class="dropdown-item" href="#">Rock Paper Scissors</a></li>
+            </ul>
+          </li>
+        
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        
+          <li class="nav-item flex-fill">
+            <a class="nav-link" href="index.html">Return</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+  <div class="container-fluid p-0 justify-content-space-between" id="featured-section">
+    <div id="mailto">
+        <h1 class="mb-2">Contact Details:</h1>
+        <h2><a href="mailto:jessegrocock@gmail.com" class="text-reset text-decoration-none">Email: jessegrocock@gmail.com</a></h2>
+        <h2><a href="tel:+353863638089" class="text-reset text-decoration-none">
+            Phone No: +353 86 363 8089
+          </a></h2>
+    </div>
+    <div id="contact-form">
+        <h1>Email Form</h1>
+        <form action="https://formsubmit.co/f97a33128401230608df62baf27b29dc" method="POST">
+            <!-- Email Field -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-12">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  <div class="invalid-feedback">
+                    Please enter a valid email address.
+                  </div>
+                </div>
+              </div>
+            
+              <!-- Message Field -->
+            <div class="row justify-content-center mb-3">
+                <div class="col-12">
+                  <textarea class="form-control" name="text" id="text" placeholder="Your Message" rows="8" required></textarea>
+                  <div class="invalid-feedback">
+                    Please enter a message before submitting.
+                  </div>
+                  <input type="hidden" name="_subject" value="New Portfolio Submission!">
+                </div>
+              </div>
+        
+              
+              <div class="row justify-content-center">
+                <div class="col-12 text-end">
+                  <button class="btn btn-primary px-4" type="submit">Send</button>
+                </div>
+              </div>
+          </form>
+    </div>
+  </div>
+  
+
+  <script>
+    (() => {
+      'use strict';
+      const forms = document.querySelectorAll('.needs-validation');
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
+  
+</body>
+</html>
